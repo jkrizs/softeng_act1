@@ -8,7 +8,7 @@ A simple web-based task management system built with Laravel. This application a
 - **Laravel Breeze** (authentication starter kit)
 - **Tailwind CSS** (styling)
 - **Vite** (frontend build tool)
-- **MySQL** (database)
+- **Laravel Herd** (local development environment)
 
 ## Features
 
@@ -47,27 +47,14 @@ A simple web-based task management system built with Laravel. This application a
    npm run build
    ```
 
-5. **Configure MySQL database:**
-   - Edit your `.env` file:
-     ```
-     DB_CONNECTION=mysql
-     DB_HOST=127.0.0.1
-     DB_PORT=3306
-     DB_DATABASE=your_database_name
-     DB_USERNAME=your_username
-     DB_PASSWORD=your_password
-     ```
-
-6. **Run migrations:**
+5. **Run migrations:**
    ```sh
    php artisan migrate
    ```
 
-7. **Start the server:**
-   ```sh
-   php artisan serve
-   ```
-   Visit [http://localhost:8000](http://localhost:8000) in your browser.
+6. **Start the server with Laravel Herd:**
+   - Open Laravel Herd and add this project.
+   - Herd will serve your app automatically, usually at [http://localhost](http://localhost).
 
 ## Usage
 
@@ -99,4 +86,4 @@ This project is open-sourced under the [MIT license](LICENSE).
 
 ---
 
-Built with Laravel, Breeze, Tailwind
+Built with Laravel, Breeze, Tailwind CSS, Vite, and Laravel Herd.
