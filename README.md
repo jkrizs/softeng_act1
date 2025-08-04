@@ -2,6 +2,14 @@
 
 A simple web-based task management system built with Laravel. This application allows users to register, log in, and manage their personal tasks with features like task creation, editing, deletion, searching, and filtering by status.
 
+## Frameworks & Starter Kits Used
+
+- **Laravel** (PHP framework)
+- **Laravel Breeze** (authentication starter kit)
+- **Tailwind CSS** (styling)
+- **Vite** (frontend build tool)
+- **MySQL** (database)
+
 ## Features
 
 - User registration, login, and profile management
@@ -12,16 +20,7 @@ A simple web-based task management system built with Laravel. This application a
 - Responsive and clean UI with Tailwind CSS
 - Secure authentication and authorization
 
-## Getting Started
-
-### Prerequisites
-
-- PHP >= 8.2
-- Composer
-- Node.js & npm
-- SQLite (default) or another supported database
-
-### Installation
+## Quick Setup
 
 1. **Clone the repository:**
    ```sh
@@ -29,53 +28,42 @@ A simple web-based task management system built with Laravel. This application a
    cd softeng_act1
    ```
 
-2. **Install PHP dependencies:**
+2. **Install dependencies:**
    ```sh
    composer install
-   ```
-
-3. **Install JavaScript dependencies:**
-   ```sh
    npm install
    ```
 
-4. **Copy the example environment file and set your environment variables:**
+3. **Set up environment:**
    ```sh
    cp .env.example .env
-   ```
-
-5. **Generate an application key:**
-   ```sh
    php artisan key:generate
    ```
 
-6. **Set up the database:**
-   - By default, the app uses SQLite. You can change the database settings in `.env`.
-   - To use SQLite, create the database file:
-     ```sh
-     type nul > database\database.sqlite
+4. **Install Laravel Breeze:**
+   ```sh
+   composer require laravel/breeze --dev
+   php artisan breeze:install
+   npm run build
+   ```
+
+5. **Configure MySQL database:**
+   - Edit your `.env` file:
      ```
-   - Update your `.env`:
-     ```
-     DB_CONNECTION=sqlite
-     DB_DATABASE=/absolute/path/to/database/database.sqlite
+     DB_CONNECTION=mysql
+     DB_HOST=127.0.0.1
+     DB_PORT=3306
+     DB_DATABASE=your_database_name
+     DB_USERNAME=your_username
+     DB_PASSWORD=your_password
      ```
 
-7. **Run migrations:**
+6. **Run migrations:**
    ```sh
    php artisan migrate
    ```
 
-8. **Build frontend assets:**
-   ```sh
-   npm run build
-   ```
-   For development, use:
-   ```sh
-   npm run dev
-   ```
-
-9. **Start the development server:**
+7. **Start the server:**
    ```sh
    php artisan serve
    ```
@@ -83,12 +71,8 @@ A simple web-based task management system built with Laravel. This application a
 
 ## Usage
 
-- Register a new account or log in.
-- After logging in, you'll be redirected to the dashboard.
-- Click "View Your Tasks" to manage your tasks.
-- Use the "Add Task" button to create a new task.
-- Edit or delete tasks using the corresponding buttons.
-- Use the search bar and status filter to find specific tasks.
+- Register or log in to manage your tasks.
+- Add, edit, delete, and filter tasks by status.
 
 ## Project Structure
 
@@ -109,16 +93,10 @@ or, if using Pest:
 vendor/bin/pest
 ```
 
-## Built With
-
-- [Laravel](https://laravel.com/) - PHP web framework
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [Vite](https://vitejs.dev/) - Frontend build tool
-
 ## License
 
 This project is open-sourced under the [MIT license](LICENSE).
 
 ---
 
-Feel free to contribute or open
+Built with Laravel, Breeze, Tailwind
