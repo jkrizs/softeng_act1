@@ -78,12 +78,6 @@ php artisan test
 or, if using Pest:
 ```sh
 vendor/bin/pest
-```
-
-## License
-
-This project is open-sourced under the [MIT license](LICENSE).
-
 ---
 
 Built with Laravel, Breeze, Tailwind CSS, Vite, and Laravel Herd.
