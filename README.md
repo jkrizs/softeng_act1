@@ -7,7 +7,6 @@ A simple web-based task management system built with Laravel. This application a
 - **Laravel** (PHP framework)
 - **Laravel Breeze** (authentication starter kit)
 - **Tailwind CSS** (styling)
-- **Vite** (frontend build tool)
 - **Laravel Herd** (local development environment)
 
 ## Features
