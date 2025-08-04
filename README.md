@@ -81,3 +81,5 @@ vendor/bin/pest
 ---
 
 Built with Laravel, Breeze, Tailwind CSS, Vite, and Laravel Herd.
+
+Random
